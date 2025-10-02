@@ -1,0 +1,528 @@
+@import url('https://fonts.google.com/share?selection.family=Montserrat:ital,wght@0,100..900;1,100..900');
+
+:root {
+    --mantine-color-dark0: rgb(10, 10, 10);
+    --bg: #0e0e0f;         /* fondo página */
+    --card: #0f1115;       /* fondo item */
+    --text: #e7e7ea;       /* texto */
+    --muted:#9aa1aa;       /* texto secundario */
+    --border: #1f3742;     /* borde (toque azulado) */
+    --border-hover: #2b5566;
+    --accent: #67d4ff;     /* resalte sutil */
+    --radius: 10px;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    min-width: 100%;
+    padding: 0px;
+    background-color: rgb(10, 10, 10);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+#Hero {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 7% 17% 0px;
+    background: linear-gradient(to top, rgba(24, 129, 191, 0.2), transparent 95%);
+}
+
+.Hero-Title {
+    transition: 0.2s;
+    text-align: center;
+    color: rgb(223, 223, 224);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 5vh;
+    text-wrap: pretty;
+}
+
+.paragraph-HeroTitle{
+    text-align: center;
+    color: rgb(223, 223, 224);
+    font-size: 1.6rem;
+    margin-top: 5vh;
+}
+
+.btn-HeroTitle {
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 400;
+    height: 3rem;
+    font-size: 1.1rem;
+    border-radius: 1px;
+    padding: 0.5rem;
+    color: white;
+    border: transparent;
+    border-bottom: 3px solid rgb(24, 129, 191);
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    background-color:transparent;
+}
+
+#Mosaic {
+    display: flex;
+    gap: 10px;
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;      /* Centra el contenido verticalmente */
+    width: 58%;               /* Ajusta el ancho del contenedor */
+    margin: 0 auto;           /* Asegura que el contenedor se centre en la página */
+    height: 100vh;             /* Altura del contenedor */
+}
+
+.col-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1; /*Aplica el 50% del espacio disponible*/
+    height: 60vh;
+}
+
+.col-right {
+    flex: 2;
+    display: flex;
+    align-items: stretch;
+}
+
+.tile {
+    flex: 1;
+    overflow: hidden;
+}
+
+.tile img, .col-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Paragraph_Of_Date {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 7% 20%;
+    background-color: rgb(10, 10, 10);
+}
+
+.Title-Date {
+    text-wrap: pretty;
+    color: rgb(233, 223, 224);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+.Paragraph-Date {
+    text-wrap: pretty;
+    color: rgb(223, 223, 224);
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-align: center;  
+}
+
+.Line {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start, .end {
+    background-color: rgb(24, 129, 191);
+    border-radius: 1000rem;
+    width: 5px;
+    height: 5px;
+}
+
+.middle {
+    background-color: rgb(24, 129, 191);
+    min-height: 40px;
+    max-height: 10vh;
+    width: 2px;
+    height: 90%;
+}
+
+#Image_Text_Pair {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 0% 20% 0px;
+}
+
+.Media_Text_Modified {
+    text-align: left;
+    width: 100%;
+    color: rgb(223, 223, 224);
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.Media_Text {
+    text-align: left;
+    width: 100%;
+    color: rgb(223, 223, 224);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.btn_Middle {
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 400;
+    height: 3rem;
+    font-size: 1.1rem;
+    border-radius: 1px;
+    padding: 0.5rem;
+    color: white;
+    border: transparent;
+    border-bottom: 3px solid rgb(24, 129, 191);
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    background-color:transparent;
+}
+
+
+#Logo_Carrousel {
+    width: 100%;
+    height: 120vh;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(24, 129, 191, 0.1) 1%, rgba(24, 129, 191, 0.3), transparent 65%);}
+
+.Logo_Carrousel_Container {
+    object-fit: contain;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+}
+
+#Background_With_Position{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("./img/Portada web 02.png"); /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Asegura que cubra toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Oscurecer la imagen para que el texto resalte */
+    /* Puedes ajustar el valor rgba para más o menos oscuridad */
+    background-color: rgba(0, 0, 0, 0.6); /* Capa oscura sobre la imagen */
+    background-blend-mode: darken; /* Mezcla el color con la imagen */
+}
+
+.decision-container {
+    padding: 50px 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.lema {
+        font-style: italic;
+        font-size: 3em;
+        margin-bottom: 60px;
+        color: #f0f0f0;
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        right: 30%;
+        left: 27%;
+}
+
+/* Estructura Principal */
+.opciones-wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: absolute;
+    top: 120%;
+    right: 25%;
+}
+
+/* Contenedor del texto 'Tu Decides' y los corchetes */
+.decision-box {
+    position: relative; /* Clave: Los corchetes absolutos se posicionan respecto a este contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px; /* Espacio antes de las opciones inferiores */
+}
+
+.decision-texto {
+    font-size: 2.2em;
+    padding: 0 15px;
+    z-index: 10;
+    color: white;
+}
+
+/* Diseño de los Corchetes (Líneas independientes) */
+.corchete-left, .corchete-right {
+    position: absolute;
+    height: 2px;
+    background-color: #007bff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Corchete Izquierdo */
+.corchete-left {
+    left: 8%;
+    width: calc(38% - 70px);
+}
+
+.corchete-left::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    width: 2px;
+    height: 70px;
+    background-color: #007bff;
+}
+
+/* Corchete Derecho */
+.corchete-right {
+    right: 11%;
+    width: calc(35% - 70px);
+}
+
+.corchete-right::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    width: 2px;
+    height: 70px;
+    background-color: #007bff;
+    right: -1px;
+}
+
+
+/* Opciones Inferiores */
+.opciones-inferiores {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20%;
+    height: 100%;
+}
+
+.opcion {
+    font-size: 2.5em;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: radial-gradient(circle, rgba(24, 129, 191, 0.7), transparent 50%);
+    padding: 10%;
+}
+
+#Image_Text_Layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 50% 20%;
+    background-color: rgb(10, 10, 10);
+}
+
+#ColumnAB {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.ColumnA {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.ColumnB {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.Paragraph-Column1{
+    transition: 0.2s;
+    text-wrap: pretty;
+    color: rgb(223, 223, 224);
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem
+}
+
+.Paragraph-Column2{
+    transition: 0.2s;
+    text-wrap: pretty;
+    color: rgb(223, 223, 224);
+    font-style: italic;
+    font-size: 1.5rem
+}
+
+#Space_Of_Button {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 7% 17% 0px;
+}
+
+.btn_End {
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 400;
+    height: 3rem;
+    font-size: 1.1rem;
+    border-radius: 1px;
+    padding: 0.5rem;
+    color: white;
+    border: transparent;
+    border-bottom: 3px solid rgb(24, 129, 191);
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    background-color:transparent;
+}
+
+#Questions {
+    max-width: 1100px;
+    margin: 48px auto;
+    padding: 0 20px;
+}
+
+.TitleQuestions {
+    color: var(--text);
+}
+
+/*Acordion*/
+.accordion {
+    display: grid;
+    gap: 18px;
+}
+
+.accordion details {
+    background: var(--card);
+    border: 1px solid var(--card);
+    border-radius: var(--radius);
+    overflow: clip;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.accordion details:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 0 0 1px color-mix(in in srgb, var(--accent) 30%, transparent);
+}
+
+/*Cabecera*/
+.accordion summary{
+    list-style: none;
+    cursor: pointer;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-weight: 600;
+    outline: none;
+}
+
+/*Indicador Chevron*/
+
+.accordion summary::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #9aa1aa;
+    border-bottom: 2px solid #9aa1aa;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease-in-out;
+}
+  
+.accordion details[open] summary::after {
+    transform: rotate(225deg); /* Cambia de Direccion cuando se abre */
+    border-color: #67d4ff; /* Cambia de color cuando se abre*/
+}
+
+  /* Contenido */
+  .accordion .content{
+    padding: 0 20px 18px 20px;
+    color: var(--muted);
+}
+
+  /* Animación de apertura (suave) */
+.accordion details > div{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .25s ease;
+}
+.accordion details[open] > div{
+    grid-template-rows: 1fr;
+}
+.accordion .content > *{
+    overflow: hidden;
+}
+
+.accordion summary:focus-visible{
+    box-shadow: 0 0 0 2px var(--accent) inset;
+    border-radius: var(--radius);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .mosaic {
+      flex-direction: column;  /* Apila las columnas en pantallas pequeñas */
+      height: auto;            /* Ajusta la altura cuando las columnas están apiladas */
+    }
+  
+    .col-left, .col-right {
+      flex: none;              /* Sin flexibilidad cuando las columnas están apiladas */
+      width: 100%;             /* Hacen que las columnas ocupen todo el ancho */
+    }
+  
+    .col-left {
+      margin-bottom: 16px;     /* Agrega espacio entre las columnas cuando están apiladas */
+    }
+  }
