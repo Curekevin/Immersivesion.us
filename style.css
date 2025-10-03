@@ -229,7 +229,7 @@ body{
     width: 60%;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     gap: 20px;
 }
 
@@ -389,14 +389,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
 }
 
 .Paragraph-Column1{
     transition: 0.2s;
     text-wrap: pretty;
     color: rgb(223, 223, 224);
-    text-align: center;
     font-style: italic;
     font-weight: bold;
     font-size: 1.5rem
