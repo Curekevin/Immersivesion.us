@@ -464,7 +464,7 @@ body{
     align-items: center;
     flex-direction: row;
     padding: 5% 20%;
-    background-color: rgb(0, 0, 0,.25);
+    background-color: rgb(10, 10, 10);
 }
 
 #ColumnAB {
@@ -504,14 +504,19 @@ body{
     font-size: 1.5rem
 }
 
+#FinalSeccion{
+    min-width: 100%;
+    height: 100vh;
+    padding: 0px;
+}
+
 #Space_Of_Button {
     width: 100%;
     height: 100%;
-    background-color: rgb(10, 10, 10);
     display: flex;
+    gap: 7rem;
     align-items: center;
     flex-direction: column;
-    padding: 7% 17% 0px;
 }
 
 .btn_End {
@@ -532,9 +537,11 @@ body{
 }
 
 #Questions {
-    max-width: 1100px;
-    margin: 48px auto;
-    padding: 0 20px;
+    width: 60%;
+}
+
+.content {
+    transition: opacity 200ms;
 }
 
 .TitleQuestions {
@@ -617,18 +624,71 @@ body{
 
 /* RESPONSIVE */
 
-@media (max-width: 768px) {
-    .mosaic {
-      flex-direction: column;  /* Apila las columnas en pantallas pequeñas */
-      height: auto;            /* Ajusta la altura cuando las columnas están apiladas */
+@media screen and (max-width: 575px) {
+
+    .Hero-Title {
+        font-size: 84%;
     }
-  
-    .col-left, .col-right {
-      flex: none;              /* Sin flexibilidad cuando las columnas están apiladas */
-      width: 100%;             /* Hacen que las columnas ocupen todo el ancho */
+    iframe {
+        width: 100%;
+        height: 50%;
     }
-  
-    .col-left {
-      margin-bottom: 16px;     /* Agrega espacio entre las columnas cuando están apiladas */
+    .paragraph-HeroTitle {
+        font-size: 56%;
     }
-  }
+
+    .btn-HeroTitle, .btn_Middle, .btn_End {
+        font-size: 85%;
+    }
+
+    .Title-Date{
+        font-size: 0.8rem;
+    }
+    .Paragraph-Date{
+        font-size: 0.8rem;
+    }
+    .Media_Text_Modified {
+        font-size: 0.8rem;
+    }
+    .Media_Text{
+        font-size: 0.8rem;
+    }
+    #Logo_Carrousel {
+        height: 17%;
+        width: 122%;
+    }
+    .lema {
+        font-size: 1rem;
+    }
+    .Textillo {
+        font-size: 1rem;
+        width: 60%;
+    }
+    .TextoLeft {
+        font-size: 1rem;
+        width: 60%;
+    }
+    .Linea1 {
+        font-size: 1rem;
+        width: 60%;
+    }
+    .Linea2 {
+        font-size: 1rem;
+        width: 60%;
+    }
+    #Image_Text_Layout {
+        flex-direction: column;
+    }
+    #ColumnAB {
+        flex-direction: column;
+    }
+    .ColumnA, .ColumnB {
+        width: 100%;
+    }
+    .Paragraph-Column1, .Paragraph-Column2 {
+        font-size: 1rem;
+    }
+    #Questions {
+        width: 100%;
+    }
+}
