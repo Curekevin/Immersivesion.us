@@ -2,13 +2,13 @@
 
 :root {
     --mantine-color-dark0: rgb(10, 10, 10);
-    --bg: #0e0e0f;         /* fondo página */
-    --card: #0f1115;       /* fondo item */
-    --text: #e7e7ea;       /* texto */
-    --muted:#9aa1aa;       /* texto secundario */
-    --border: #1f3742;     /* borde (toque azulado) */
+    --bg: #0e0e0f;
+    --card: #0f1115;
+    --text: #e7e7ea;
+    --muted:#9aa1aa;
+    --border: #1f3742;
     --border-hover: #2b5566;
-    --accent: #67d4ff;     /* resalte sutil */
+    --accent: #67d4ff;
     --radius: 10px;
   }
 
@@ -91,13 +91,12 @@ body{
     grid-template-rows: repeat(5, 1fr);
     gap:8px;
 
-    /* controla el tamaño del contenedor */
     width:100%;
-    max-width:1200px;   /* ajusta a gusto */
-    height:80vh;        /* DA altura → los 1fr funcionan */
+    max-width:1200px;
+    height:80vh;
     margin:0 auto;
     box-sizing:border-box;
-    padding:8px;        /* opcional */
+    padding:8px;
 }
 
 .parent img{
@@ -115,7 +114,7 @@ body{
 .div6{
     grid-column-start:2;
     grid-row-start:1;
-    grid-row: span 2;   /* ya no necesitas “/ span 2” dos veces */
+    grid-row: span 2;
 }
 
 .parent{
@@ -145,7 +144,7 @@ body{
 .div3{
     grid-column-start:2;
     grid-row-start:1;
-    grid-row: span 2;   /* ocupa 2 “altos base” → 320px */
+    grid-row: span 2;
 }
 
 #Paragraph_Of_Date {
@@ -567,7 +566,6 @@ body{
     color: var(--text);
 }
 
-/*Acordion*/
 .accordion {
     display: grid;
     gap: 18px;
@@ -586,7 +584,6 @@ body{
     box-shadow: 0 0 0 1px color-mix(in in srgb, var(--accent) 30%, transparent);
 }
 
-/*Cabecera*/
 .accordion summary{
     list-style: none;
     cursor: pointer;
@@ -599,8 +596,6 @@ body{
     outline: none;
 }
 
-/*Indicador Chevron*/
-
 .accordion summary::after {
     content: "";
     width: 8px;
@@ -612,17 +607,17 @@ body{
 }
   
 .accordion details[open] summary::after {
-    transform: rotate(225deg); /* Cambia de Direccion cuando se abre */
-    border-color: #67d4ff; /* Cambia de color cuando se abre*/
+    transform: rotate(225deg);
+    border-color: #67d4ff;
 }
 
-  /* Contenido */
+
   .accordion .content{
     padding: 0 20px 18px 20px;
     color: var(--muted);
 }
 
-  /* Animación de apertura (suave) */
+
 .accordion details > div{
     display: grid;
     grid-template-rows: 0fr;
