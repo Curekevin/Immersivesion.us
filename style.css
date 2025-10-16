@@ -88,7 +88,7 @@ body{
 .parent{
     display:grid;
     grid-template-columns: repeat(5, minmax(0,1fr));
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap:8px;
 
     width:100%;
@@ -232,7 +232,7 @@ body{
     font-weight: bold;
     font-size: 1.6rem;
 }
-.Media_Text {
+.Media_Text, .Media_Text2 {
     text-align: left;
     width: 100%;
     color: rgb(223, 223, 224);
@@ -638,42 +638,73 @@ body{
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 575px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    #Hero {
+        padding: 10%;
+    }
 
     .Hero-Title {
         margin-top: 3rem;
-        font-size: 0.9rem;
+        font-size: 1rem;
+        line-height: 1.5;
     }
     iframe {
         width: 100%;
         height: 50%;
     }
     .paragraph-HeroTitle {
-        font-size: 63%;
+        font-size: 70%;
+        line-height: 1.5;
+        margin-top: 10%;
     }
 
     .btn-HeroTitle, .btn_Middle, .btn_End {
         font-size: 85%;
     }
+    
+    .parent {
+        width: 100%;
+        height: auto;
+        gap: 3%;
+    }
 
     .Title-Date{
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
+
     #Paragraph_Of_Date {
-        padding: 7% 8%;
+        padding: 15% 8% 0%;
     }
+    
     .Paragraph-Date, .Paragraph-Date2, .Paragraph-Date3{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
 
     #Image_Text_Pair {
         padding: 0% 10% 0px;
     }
 
-.Media_Text_Modified {
+    .Media_Text_Modified {
         font-size: 0.8rem;
-        margin-top: 5%;
+        margin-top: 7%;
     }
+
+    .Media_Text {
+        font-size: 55%;
+        line-height: 1.5;
+    }
+    
+    .Media_Text2 {
+        font-size: 75%;
+        line-height: 1.5;
+    }
+
+    .ButtonAndCarrousel {  
+        margin: -27%;
+    }
+    
 
     #Image_Text_Pair_With_Carrousel {
         min-height: 90vh;
@@ -682,58 +713,89 @@ body{
     .ContenidoDentro {
         padding: 0% 10% 0px;
         background: linear-gradient(to top, rgba(24, 129, 191, 0.1) 1%, rgba(24, 129, 191, 0.3), transparent 90%);
-        height: 90vh;
+        height: 120vh;
     }
 
-    .Media_Text{
-        font-size: 0.8rem;
-    }
     #Logo_Carrousel {
-        height: 17%;
-        width: 122%;
+        height: 20%;
+        width: 90dvw;
     }
+
     .Paragraph_Picture {
         padding: 1rem;
     }
+
     .Paragraph_Picture2 {
         height: 90%;
         text-align: left;
     }
+
     .lema {
         font-size: 1.1rem;
     }
+
     .Container_Adentro {
         padding: 1rem;
+        height: 60%;
     }
+
     .Textillo {
         font-size: 1rem;
         width: 60%;
     }
+
     .TextoLeft {
         font-size: 1rem;
         width: 60%;
     }
+
     .Linea1 {
         font-size: 1rem;
         width: 60%;
     }
+
     .Linea2 {
         font-size: 1rem;
         width: 60%;
     }
+
     #Image_Text_Layout {
         flex-direction: column;
+        padding: 10% 5%;
     }
+
     #ColumnAB {
         flex-direction: column;
     }
-    .ColumnA, .ColumnB {
-        width: 100%;
+
+    .ColumnA {
+        width: inherit;   
     }
+
+    .ColumnA img {
+        height: 30rem;
+    }
+
+    .ColumnB{
+        width: inherit;
+    }
+
     .Paragraph-Column1, .Paragraph-Column2 {
         font-size: 1rem;
     }
+
     #Questions {
-        width: 100%;
+        width: 75%;
+        margin: -10%;
     }
+
+    .accordion summary {
+        font-size: 0.9rem;
+        padding: 7%;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
 }
