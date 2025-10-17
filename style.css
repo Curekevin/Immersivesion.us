@@ -310,6 +310,13 @@ body{
 }
 
 #Picture {
+    z-index:-1; 
+    height: 100vh;
+    position: absolute; 
+    background-image: url(/img/Portada.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
     display: block;
@@ -346,8 +353,6 @@ body{
 }
 
 #ContainerText {
-    min-width: 100%;
-    height: 50dvh;
     padding: 0px;
 }
 
@@ -427,13 +432,10 @@ body{
 }
 
 .TextoLeft{
-    transition: 0.2s;
-    text-wrap: pretty;
     color: rgb(223, 223, 224);
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     width: 30%;
     background: radial-gradient(circle, rgba(24, 129, 191, 0.1), transparent 50%);
     font-size: 2.5rem;
@@ -524,15 +526,14 @@ body{
 
 #FinalSeccion{
     min-width: 100%;
-    height: 100vh;
-    padding: 0px;
+    height: 80vh;
+    padding: 10% 0px;
 }
 
 #Space_Of_Button {
     width: 100%;
-    height: 100%;
     display: flex;
-    gap: 7rem;
+    gap: 8rem;
     align-items: center;
     flex-direction: column;
 }
@@ -661,6 +662,7 @@ body{
 
     .btn-HeroTitle, .btn_Middle, .btn_End {
         font-size: 85%;
+        margin-bottom: 0rem;
     }
     
     .parent {
@@ -707,18 +709,26 @@ body{
     
 
     #Image_Text_Pair_With_Carrousel {
-        min-height: 90vh;
+        min-height: 80vh;
     }
 
     .ContenidoDentro {
         padding: 0% 10% 0px;
         background: linear-gradient(to top, rgba(24, 129, 191, 0.1) 1%, rgba(24, 129, 191, 0.3), transparent 90%);
-        height: 120vh;
+        height: 80vh;
     }
 
     #Logo_Carrousel {
-        height: 20%;
-        width: 90dvw;
+        height: 15%;
+        width: 65%;
+    }
+
+    #Background_With_Grid {
+        height: 50vh;
+    }
+
+    #Picture {
+        height: 50vh;
     }
 
     .Paragraph_Picture {
@@ -726,7 +736,7 @@ body{
     }
 
     .Paragraph_Picture2 {
-        height: 90%;
+        height: 92%;
         text-align: left;
     }
 
@@ -736,7 +746,7 @@ body{
 
     .Container_Adentro {
         padding: 1rem;
-        height: 60%;
+        height: 100%;
     }
 
     .Textillo {
@@ -746,17 +756,14 @@ body{
 
     .TextoLeft {
         font-size: 1rem;
-        width: 60%;
     }
 
-    .Linea1 {
-        font-size: 1rem;
-        width: 60%;
+    .Linea1, .Linea2{
+        font-size: 0.9rem;
     }
 
-    .Linea2 {
-        font-size: 1rem;
-        width: 60%;
+    #ContainerText {
+        height: 25vh;
     }
 
     #Image_Text_Layout {
@@ -780,18 +787,39 @@ body{
         width: inherit;
     }
 
-    .Paragraph-Column1, .Paragraph-Column2 {
+    .Paragraph-Column1 {
         font-size: 1rem;
+        text-align: center;
+        padding-bottom: 8%;
+    }
+
+    .Paragraph-Column2 {
+        font-size: 1rem;
+        padding: 5% 0%;
     }
 
     #Questions {
-        width: 75%;
+        width: 80%;
         margin: -10%;
+    }
+
+    summary.TitleQuestions {
+        display: flex;
+        width: 100%;
+        display: flex;
+        align-items: start;
     }
 
     .accordion summary {
         font-size: 0.9rem;
-        padding: 7%;
+        padding: 5%;
+    }
+
+    .accordion summary::after {
+        width: 4.8px;
+        height: 4.2px;
+        border-right: 1px solid #9aa1aa;
+        border-bottom: 1px solid #9aa1aa;
     }
 
 }
