@@ -824,6 +824,193 @@ body{
 
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #Hero {
+        padding: 10%;
+    }
+
+    .Hero-Title {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    iframe {
+        width: 100%;
+        height: 45vh;
+    }
+    .paragraph-HeroTitle {
+        font-size: 76%;
+        line-height: 1.5;
+        margin-top: 10%;
+    }
+
+    .btn-HeroTitle, .btn_Middle, .btn_End {
+        font-size: 100%;
+        margin-bottom: 0rem;
+    }
+    
+    .parent {
+        width: 86%;
+        height: 45vh;
+        gap: 3%;
+    }
+    
+    .CajaDentro{
+        padding: 4% 10% 14%;
+    }
+
+    .Title-Date{
+        font-size: 1.1rem;
+    }
+
+    #Paragraph_Of_Date {
+        padding: 15% 20% 6%;
+    }
+    
+    .Paragraph-Date, .Paragraph-Date2, .Paragraph-Date3{
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    
+    #Image_Text_Pair {
+        padding: 0% 20% 0px;
+    }
+    
+    .ContenidoDentro {
+        padding: 0% 20% 0px;
+        background: linear-gradient(to top, rgba(24, 129, 191, 0.1) 1%, rgba(24, 129, 191, 0.3), transparent 71%);
+        height: 200vh;
+    }
+    .Media_Text {
+        font-size: 70%;
+        line-height: 1.5;
+    }
+    
+    .Media_Text2 {
+        font-size: 100%;
+        line-height: 1.5;
+    }
+
+    .Media_Text_Modified {
+        font-size: 1rem;
+        margin-top: 7%;
+    }
+
+
+    .ButtonAndCarrousel {  
+        margin: -10%;
+    }
+    
+
+    #Image_Text_Pair_With_Carrousel {
+        min-height: 80vh;
+    }
+
+
+    #Logo_Carrousel {
+        height: 18%;
+        width: 100%;
+    }
+
+    #Background_With_Grid {
+        height: 50vh;
+    }
+
+    #Picture {
+        height: 50vh;
+    }
+
+    .Paragraph_Picture {
+        padding: 1rem;
+        height: 100%;
+    }
+
+    .Paragraph_Picture2 {
+        height: 100%;
+        text-align: left;
+    }
+
+    .lema {
+        font-size: 1.3rem;
+    }
+
+    .Container_Adentro {
+        padding: 1rem;
+        height: 100%;
+    }
+
+    .Textillo {
+        font-size: 1.2rem;
+        width: 60%;
+    }
+
+    .TextoLeft {
+        font-size: 1rem;
+    }
+
+    .Linea1, .Linea2{
+        font-size: 0.9rem;
+    }
+
+    #ContainerText {
+        height: 30vh;
+    }
+
+    #Image_Text_Layout {
+        flex-direction: column;
+        padding: 10% 20%;
+    }
+
+    #ColumnAB {
+        flex-direction: row;
+    }
+
+    .ColumnA {
+        width: inherit;   
+    }
+
+    .ColumnA img {
+        height: 60rem;
+    }
+
+    .ColumnB{
+        width: inherit;
+    }
+
+    .Paragraph-Column1 {
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 8%;
+    }
+
+    .Paragraph-Column2 {
+        font-size: 1rem;
+        padding: 5% 0%;
+    }
+
+    #Questions {
+        width: 60%;
+        margin: -4%;
+    }
+
+    summary.TitleQuestions {
+        display: flex;
+        width: 100%;
+        display: flex;
+        align-items: start;
+    }
+
+    .accordion summary {
+        font-size: 0.9rem;
+        padding: 5%;
+    }
+
+    .accordion summary::after {
+        width: 4.8px;
+        height: 4.2px;
+        border-right: 1px solid #9aa1aa;
+        border-bottom: 1px solid #9aa1aa;
+    }
 
 }
