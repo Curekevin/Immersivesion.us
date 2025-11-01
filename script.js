@@ -1,34 +1,16 @@
-const boton = document.querySelector('.hero__button');
+const botons = document.querySelectorAll('[kuku="bookNowButton"]');
+botons.forEach(boton => {
+    boton.addEventListener('click', () =>{
+        verificarEstado();
+    });
+  });
 
-boton.addEventListener('click', () => {
-    const activo = true;
-    if(activo) {
-        alert('Botón funcionando');
-    } else {
-        alert('Botón no funciona');
-    }
-});
-
-const boton__mid = document.querySelector('.image-text-pair__button');
-
-boton__mid.addEventListener('click', () => {
-    const activo = true;
-    if(activo) {
-        alert('Botón funcionando');
-    } else {
-        alert('Botón no funciona');
-    }
-});
-
-const boton__end = document.querySelector('.final-section__button');
-
-boton__end.addEventListener('click', () => {
-    const activo = true;
-    if(activo) {
-        alert('Botón funcionando');
-    } else {
-        alert('Botón no funciona');
-    }
-});
-
-
+  
+function verificarEstado() {
+  const activo = true;
+  if (activo) {
+    alert("El boton funciona");
+  } else {
+    alert("El boton no funciona");
+  }
+}
